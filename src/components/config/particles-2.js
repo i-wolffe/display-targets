@@ -57,9 +57,9 @@ const particlesConfig = {
       number: {
           density: {
               enable: true,
-              area: 800,
+              area: 900,
           },
-          value: 80,
+          value: 200,
       },
       opacity: {
           value: 0.5,
@@ -68,7 +68,7 @@ const particlesConfig = {
           type: "circle",
       },
       size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 3 },
       },
   },
   detectRetina: true,
