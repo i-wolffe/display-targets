@@ -6,7 +6,9 @@ import Col from 'react-bootstrap/Col';
 
 import { GiEcology } from "react-icons/gi";
 import { FaDigitalTachograph } from "react-icons/fa";
-import { AiFillSafetyCertificate } from "react-icons/ai";
+import { AiFillSafetyCertificate } from "react-icons/ai"; // Sustainability
+import { AiOutlineCodepenCircle } from "react-icons/ai"; // Digitalization
+import { AiFillWarning } from "react-icons/ai";// Security
 
 export class  ContentElement extends Component {
   constructor(props) {
@@ -29,10 +31,10 @@ export class  ContentElement extends Component {
               {
                 this.state.type === '1' 
                 ?
-                  <GiEcology />
+                  <AiFillSafetyCertificate />
                 : this.state.type === '2'
-                ? <FaDigitalTachograph />
-                : <AiFillSafetyCertificate />
+                ? <AiOutlineCodepenCircle />
+                : <AiFillWarning />
               }
             </span>
           </Col>

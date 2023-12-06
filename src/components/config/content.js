@@ -29,6 +29,13 @@ const content = [
                 description: `Uno de los equipos de mayor consumo en la planta es el compresor de aire, en 2024 se tiene programado 
                 realizar la instalación de un nuevo compresor de 175 HPs de una eficiencia mayor el cual se espera tenga un impacto 
                 positivo en el consumo de energía eléctrica.`
+            },
+            {
+                name: "Apagado automatico de iluminación",
+                metric: "Pocentaje",
+                objective: "100%",
+                description: `Implementación de un sistema electronico para realizar el apagado programado de la iluminación en planta
+                cuando sea requerido el sistema actuará de manera automática para encender o apagar las lamparas.`
             }
         ],
 	},
@@ -63,7 +70,13 @@ const content = [
                 objective: "100%",
                 description: `Una unidad de aire acondicionado genera hasta 10 litros de agua por hora en el proceso de condensado que se 
                 genera durante la etapa de enfriamiento del aire, el proyecto consiste en recuperar esta agua y utilizarla para nuestros procesos.`
-            }
+            },
+            {
+                name: "Implementación del 100% de lavadoras interconectadas a la linea morada",
+                metric: "Pocentaje",
+                objective: "100%",
+                description: `El uso de agua tratada en las lavadoras de autoclaves disminuye el consumo directo de agua cruda de pozo.`
+            },
         ],
 	},
     {
@@ -115,37 +128,107 @@ const content = [
         ]
     },
     {
-		name: "Certificación ISO-500001",
-        type: "3",
+		name: "Certificación ISO-45001",
+        type: "1",
         target: "OK",
         badge: "2",
         actions: [
             {
-                name: "Métrica 1",
+                name: "Implementación de Fase 1 / 2",
                 metric: "Status",
                 objective: "OK / NOK",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus. Aenean laoreet molestie nisl, sed vestibulum odio. Integer dictum, dui porttitor venenatis gravida, 
-                est eros porttitor neque, vitae consectetur est arcu a metus.`
+                description: `Implementación de sistema de gestion ISO 45001 con el cual se.
+                gestionan mejoras enfocadas al cuidado de la salud y seguridad ocupacional`
             },
             {
-                name: "Métrica 2",
-                metric: "Numérica",
-                objective: "10",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus. Aenean laoreet molestie nisl, sed vestibulum odio. Integer dictum, dui porttitor venenatis gravida, 
-                est eros porttitor neque, vitae consectetur est arcu a metus.`
-            },
-            {
-                name: "Métrica 3",
-                metric: "Porcentaje",
-                objective: "100%",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus. Aenean laoreet molestie nisl, sed vestibulum odio. Integer dictum, dui porttitor venenatis gravida, 
-                est eros porttitor neque, vitae consectetur est arcu a metus.`
+                
             }
         ]
-    }
+    },
+    {
+		name: "MTTR Extrusión",
+        type: "3",
+        target: "Min",
+        badge: "3",
+        actions: [
+            {
+                name: "Reducción de tiempo",
+                metric: "Tiempo",
+                objective: "24 min",
+                description: `MTTR Extrusión 24 minutos`
+            }
+        ]
+    },
+    {
+		name: "MTTR Vulcanizado",
+        type: "3",
+        target: "Min",
+        badge: "3",
+        actions: [
+            {
+                name: "Reducción de tiempo",
+                metric: "Tiempo",
+                objective: "40 min",
+                description: `MTTR Vulcanizado 40 minutos`
+            }
+        ]
+    },
+    {
+		name: "MTTR Terminado",
+        type: "3",
+        target: "Min",
+        badge: "3",
+        actions: [
+            {
+                name: "Reducción de tiempo",
+                metric: "Tiempo",
+                objective: "29 min",
+                description: `MTTR Terminado 29 minutos`
+            }
+        ]
+    },
+    {
+		name: "MTBF Extrusión",
+        type: "3",
+        target: "Hrs",
+        badge: "3",
+        actions: [
+            {
+                name: "Tiempo",
+                metric: "Tiempo",
+                objective: "100 hrs",
+                description: `MTBF Extrusión 100 horas`
+            }
+        ]
+    },
+    {
+		name: "MTBF Vulcanizado",
+        type: "3",
+        target: "Hrs",
+        badge: "3",
+        actions: [
+            {
+                name: "Tiempo",
+                metric: "Tiempo",
+                objective: "40 min",
+                description: `MTBF Vulcanizado 125`
+            }
+        ]
+    },
+    {
+		name: "MTBF Terminado",
+        type: "3",
+        target: "Hrs",
+        badge: "3",
+        actions: [
+            {
+                name: "Tiempo",
+                metric: "Tiempo",
+                objective: "29 min",
+                description: `MTBF Terminado 29 minutos`
+            }
+        ]
+    },
 ];
 
 export default content;
