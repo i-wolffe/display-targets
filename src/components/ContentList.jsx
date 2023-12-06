@@ -35,12 +35,14 @@ export class  ContentList extends Component {
               key={`item-${item.name}`}
               name={item.name}
               target={item.target}
+              badge={item.badge}
+              type={item.type}
               elements={item.actions}
               />
             })
           : null
         }
-        <Accordion>
+        {/* <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Header>Accordion Item #1</Accordion.Header>
           <Accordion.Body>
@@ -65,7 +67,7 @@ export class  ContentList extends Component {
             culpa qui officia deserunt mollit anim id est laborum.
           </Accordion.Body>
         </Accordion.Item>
-      </Accordion>
+      </Accordion> */}
       </Container>
     )
   }

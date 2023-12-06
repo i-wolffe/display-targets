@@ -28,7 +28,7 @@ function App() {
         </Row>
         <Row className="justify-content-md-center">
           <Col xs={12} className="subtitle">
-            <h3>Sostenibilidad & Digitalizacion</h3>
+            <h3>Sustentabilidad & Digitalización</h3>
           </Col>
         </Row>
       </Container>

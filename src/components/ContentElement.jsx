@@ -4,12 +4,18 @@ import Accordion from 'react-bootstrap/Accordion';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { GiEcology } from "react-icons/gi";
+import { FaDigitalTachograph } from "react-icons/fa";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+
 export class  ContentElement extends Component {
   constructor(props) {
     super(props)
     this.state = {
       name: this.props.name,
       target: this.props.target,
+      type: String(this.props.type),
+      badge: this.props.badge,
       elements: this.props.elements
     }
   }
@@ -18,11 +24,23 @@ export class  ContentElement extends Component {
     return (
       <Container className='elementContainer'>
         <Row className='justify-content-left'>
-          <Col xs={8} lg={10}>
+          <Col xs={1} lg={1}>
+            <span className={`iconBadge icon-${this.state.type}`}>
+              {
+                this.state.type === '1' 
+                ?
+                  <GiEcology />
+                : this.state.type === '2'
+                ? <FaDigitalTachograph />
+                : <AiFillSafetyCertificate />
+              }
+            </span>
+          </Col>
+          <Col xs={7} lg={9}>
             <h2 className='title-name'>{this.state.name}</h2>
           </Col>
           <Col xs={4} lg={2}>
-            <span className='targetBadge'>{this.state.target}</span>
+            <span className={`targetBadge badgeType${this.state.badge}`}>{this.state.target}</span>
           </Col>
         </Row>
         <Row>
@@ -30,10 +48,23 @@ export class  ContentElement extends Component {
           <Accordion>
             {
               this.state.elements.map((elem,i) => {
-                return <Accordion.Item eventKey={i} key={`acc-${i}`}>
+                return <Accordion.Item className='acc-item' eventKey={i} key={`acc-${i}`}>
                   <Accordion.Header><strong>{elem.name}</strong></Accordion.Header>
                   <Accordion.Body>
-                    {elem.description}
+                    <Row>
+                      <Col xs={6} lg={6} className='details'>
+                        <span><strong>Métrica: </strong>{elem.metric}</span>
+                      </Col>
+                      <Col xs={6} lg={6} className='details'>
+                        <span><strong>Objetivo: </strong>{elem.objective}</span>
+                      </Col>
+                    </Row>
+                    <br />
+                    <Row>
+                      <Col xs={12} lg={12}>
+                        <p className='description'>{elem.description}</p>
+                      </Col>
+                    </Row>
                   </Accordion.Body>
                 </Accordion.Item>
               })
