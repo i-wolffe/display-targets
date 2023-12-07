@@ -1,6 +1,8 @@
 
 import './App.css';
 import ParticlesBackground from './components/ParticlesBackground';
+import logo from './images/logo_rsz.png';
+import { FaWolfPackBattalion } from "react-icons/fa6";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -15,7 +17,7 @@ function App() {
       <Container>
         <Row className='logo'>
           <Col className="img-logo">
-            <h1>_LOGO_</h1>
+          <img src={logo} className="Image-logo" alt="logo" />
           </Col>
           <Col xs lg="2" className="locale">
             <span>Lang</span>
@@ -33,6 +35,9 @@ function App() {
         </Row>
       </Container>
       <ContentList />
+      <div className='footer'>
+      <span className="iconBadge"><FaWolfPackBattalion /></span>
+      </div>
     </div>
   );
 }

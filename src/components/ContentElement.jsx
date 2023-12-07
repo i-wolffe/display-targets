@@ -4,8 +4,6 @@ import Accordion from 'react-bootstrap/Accordion';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import { GiEcology } from "react-icons/gi";
-import { FaDigitalTachograph } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai"; // Sustainability
 import { AiOutlineCodepenCircle } from "react-icons/ai"; // Digitalization
 import { AiFillSecurityScan } from "react-icons/ai";// Security

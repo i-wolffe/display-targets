@@ -118,7 +118,7 @@ const content = [
                 name: "Workshop con los talleres de producción para cultura de contaminación",
                 metric: "Numerica",
                 objective: "3",
-                description: `Llevar a cabo <i>workshops</i> para concientizar al personal de los talleres de producción sobre la
+                description: `Llevar a cabo Workshops para concientizar al personal de los talleres de producción sobre la
                 contaminación que se genera y las acciones que se deben tomar para mitigarla.`
             },
             {
