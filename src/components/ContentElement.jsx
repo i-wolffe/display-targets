@@ -8,7 +8,7 @@ import { GiEcology } from "react-icons/gi";
 import { FaDigitalTachograph } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai"; // Sustainability
 import { AiOutlineCodepenCircle } from "react-icons/ai"; // Digitalization
-import { AiFillWarning } from "react-icons/ai";// Security
+import { AiFillSecurityScan } from "react-icons/ai";// Security
 
 export class  ContentElement extends Component {
   constructor(props) {
@@ -25,8 +25,8 @@ export class  ContentElement extends Component {
     console.log(this.state.elements)
     return (
       <Container className='elementContainer'>
-        <Row className='justify-content-left'>
-          <Col xs={1} lg={1}>
+        <Row className='justify-content-left itemHeader'>
+          <Col xs={2} lg={1} className=''>
             <span className={`iconBadge icon-${this.state.type}`}>
               {
                 this.state.type === '1' 
@@ -34,12 +34,12 @@ export class  ContentElement extends Component {
                   <AiFillSafetyCertificate />
                 : this.state.type === '2'
                 ? <AiOutlineCodepenCircle />
-                : <AiFillWarning />
+                : <AiFillSecurityScan />
               }
             </span>
           </Col>
-          <Col xs={7} lg={9}>
-            <h2 className='title-name'>{this.state.name}</h2>
+          <Col xs={6} lg={9}>
+            <h3 className='title-name'>{this.state.name}</h3>
           </Col>
           <Col xs={4} lg={2}>
             <span className={`targetBadge badgeType${this.state.badge}`}>{this.state.target}</span>
