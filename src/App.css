@@ -50,3 +50,17 @@ img {
   justify-content: center;
   width: 100% !important;
 }
+
+.footer {
+  background-color: #7e7d7d55;
+  border-top-left-radius: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  border-top-right-radius: 1.5rem;
+  color: white;
+}
+
+.iconFooter {
+  color: #cccccc99 !important;
+  font-size: 8px;
+}

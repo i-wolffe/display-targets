@@ -111,54 +111,61 @@ const content = [
                 name: "Investigación de lavado de copas de pintura y solvente en tampografías",
                 metric: "Numerica",
                 objective: "1",
-                description: `Realizar un estudio para conocer los motivos y el proceso del lavado de las copas para buscar
-                eficientarlo .`
+                description: `Las estaciones de pintura son un foco rojo ante la generación de residuos peligrosos. Se investigará alternativas 
+                para el lavado de copas, así como máquinas dosificadoras de pintura para tener un control de las porciones y evitar la generación 
+                de residuos por exceso de mezcla en copa.`
             },
             {
                 name: "Workshop con los talleres de producción para cultura de contaminación",
                 metric: "Numerica",
                 objective: "3",
-                description: `Llevar a cabo Workshops para concientizar al personal de los talleres de producción sobre la
-                contaminación que se genera y las acciones que se deben tomar para mitigarla.`
+                description: `Se realizarán talleres con apoyo de los APU para tener un entrenamiento activo con personal producción en temas 
+                de cultura ambiental, propiciando la conciencia y sensibilización en el tema de generación de residuos, así como otros de 
+                preservación del medio ambiente.`
             },
             {
                 name: "Reducción de Frecuencia: Solvente de extrusión (exxol D-40)",
                 metric: "OK / NOK",
                 objective: "OK",
-                description: `Disminuir la frecuencia de uso actual de 3 días a 1 mes para reducir el consumo del solvente.`
+                description: `Otra fuente de generación de residuos peligrosos (RP) es el solvente sucio generado en extrusión, y los trapos 
+                impregnados tras el TPM de las tinas de extrusión, al ampliarse los periodos de cambio del solvente estos sin que se vean 
+                afectados otros aspectos con la calidad del material, evitarán la constante generación de RP.`
             },
             {
                 name: "Evaluación de recipientes para reutilizar",
                 metric: "Porcentaje",
                 objective: "100%",
-                description: `Evaluar el estado actual de recipientes para reciduos y utilizar aquellos que puedan ser reusados 
-                para contener diferentes residuos.`
+                description: `Fomentando el reusar y reciclar, se estará en una constante búsqueda en producción y almacenes para buscar un 
+                segundo uso a recipientes y alargar su vida útil.`
             },
             {
                 name: "Investigar proveedores para desechos actuales RME",
                 metric: "OK / NOK",
                 objective: "OK",
-                description: `Analizar distintas opciones con proveedores en la zona para el manejo de estos desechos.`
+                description: `Sumando proyectos en temas de economía circular, se busca el "zero waste", promoviendo la optimización de recursos, 
+                la reducción en el consumo de materias primas y el aprovechamiento de los residuos, reciclándolos o dándoles una nueva vida 
+                para convertirlos en nuevos productos.`
             },
             {
                 name: "Eficientar la entrega de trapos en almacén",
                 metric: "Numerica",
                 objective: "3",
-                description: `Modificar el procedimiento actual para lograr optimizar y contabilizar la entrega de este material.`
+                description: `Al tener un control en la entrega y cantidad de los trapos desde almacén de indirectos, 
+                se verá restringido su uso deliberado en producción.`
             },
             {
                 name: "Eliminar puntos de certificación en terminado como proceso normal",
                 metric: "Porcentaje",
                 objective: "<50%",
-                description: `Modificar la práctica que se tiene de marcar con puntos, para así disminuir el gasto en consumibles.
-                ÚNICAMENTE llevar a cabo el proceso en casos de contenciones.`
+                description: `Los marcadores "unipaint" al terminar su vida útil en planta son desechados como RP, si se reduce la 
+                cantidad de puntos de certificación por ende la tinta rendirá más, y se podría apreciar una disminución en este residuo.`
             },
             {
-                name: "Investigación del proceso de segregación de RP desde celda",
+                name: "Realizar un análisis del proceso de segregación de RP desde celda",
                 metric: "OK / NOK",
                 objective: "OK",
-                description: `Realizar un análisis de las prácticas actuales que se tiene por celda para la segregación de Residuos 
-                Peligrosos y buscar alternativas que faciliten el proceso.`
+                description: `Analizar la factibilidad de color un contenedor exclusivo para RP en cada celda, o identificar los 
+                ya existentes, fomentando la segregación desde el área de trabajo. `
             },
         ]
     },
@@ -187,8 +194,8 @@ const content = [
                 name: "Sistema de alamacenamiento de información",
                 metric: "Porcentaje",
                 objective: "100%",
-                description: `Adquirir e instalar un sistema de almacenamiento para el manejo y seguimiento de la información 
-                de las APUs.`
+                description: `Se requiere adquirir e instalar un sistema de almacenamiento para el manejo y seguimiento de la 
+                información de poroducción que se encuentra en las APUs, para no saturar los equipos locales.`
             },
             {
                 name: "Instalación de Red de Producción",
@@ -252,21 +259,22 @@ const content = [
                 name: "Desarrollar palataformas de auditorías digitales",
                 metric: "OK / NOK",
                 objective: "OK",
-                description: `Diseño y desarrollo de herramientas que faciliten la creación de formatos de auditoría y su llenado.`
+                description: `desarrollar una plataforma interna con el objetivo de reducir los tiempos para generar los reportes de 
+                auditoría, eliminando el uso de papel, y todo lo que eso conlleva.`
             },
             {
                 name: "Realizar auditorías digitales",
                 metric: "Porcentaje",
                 objective: "100%",
-                description: `Migrar la realización de auditorías a las nuevas herramientas para poder guardar registros y 
-                generar reportes.`
+                description: `Cumplir con el programa de auditorías internas de los Sistemas de Gestión y Requisitos Legales.`
             },
             {
                 name: "Actualizar el sistema de Preventeo",
                 metric: "Porcentaje",
                 objective: "100%",
-                description: `Modificar la metodología actual para el sistema de Preventeo, para conseguir información más 
-                acertada y mejores resultados.`
+                description: `Realizar las reevaluaciones de los análisis de riesgos de cada puesto de trabajo, incluyendo los 
+                nuevos proyectos previo a su liberación en la plataforma de PREVENTEO, en cumplimiento a los requisitos legales 
+                aplicables (maquinaría y equipo, equipo de protección personal, sustancias químicas, etc.)`
             },
         ]
     },
@@ -281,45 +289,35 @@ const content = [
                 name: "Actualización del sistema de gestión",
                 metric: "OK / NOK",
                 objective: "OK",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus. Aenean laoreet molestie nisl, sed vestibulum odio. Integer dictum, dui porttitor venenatis gravida, 
-                est eros porttitor neque, vitae consectetur est arcu a metus.`
-            },
-            {
-                name: "Realización de Auditorías Cruzadas",
-                metric: "Porcentaje",
-                objective: "90%",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus. Aenean laoreet molestie nisl, sed vestibulum odio. Integer dictum, dui porttitor venenatis gravida, 
-                est eros porttitor neque, vitae consectetur est arcu a metus.`
+                description: `Revisión del sistema de gestión para elevar el nivel de conciencia y robustecer los controles operacionales.`
             },
             {
                 name: "Implementación de Comités de seguridad para procesimientos Claves",
                 metric: "Numérica",
                 objective: "10",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus. Aenean laoreet molestie nisl, sed vestibulum odio. Integer dictum, dui porttitor venenatis gravida, 
-                est eros porttitor neque, vitae consectetur est arcu a metus.`
+                description: `Formar equipos multidisciplinarios para actualizar el Sistema de Gestión, entre los procedimientos son 
+                considerados diez: Corte y soldadura, Protección de caídas, Emergencias, Derrames, Sustancias Químicas, Bloqueo de Energía, 
+                Guardas y dispositivos de seguridad, Equipo móvil, Espacios Confinados y finalmente Ergonomía.`
             },
             {
-                name: "Cumplimiento de rquisito legal",
+                name: "Cumplimiento de Requisito Legal",
                 metric: "Porcentaje",
                 objective: "90%",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus. Aenean laoreet molestie nisl, sed vestibulum odio. Integer dictum, dui porttitor venenatis gravida, 
-                est eros porttitor neque, vitae consectetur est arcu a metus.`
+                description: `mantener el cumplimiento de las leyes aplicables a Planta Celaya 2 (STPS, Protección Civil, 
+                    Reglamento Federal de SST, Ley Federal del Trabajo, etc.)`
             },
             {
                 name: "Implementación de Fase I / Fase II",
                 metric: "OK / NOK",
                 objective: "OK",
-                description: `Implementación de sistema de gestion ISO 45001 con el cual se.
-                gestionan mejoras enfocadas al cuidado de la salud y seguridad ocupacional`
+                description: `Auditoría de Certificación realizada en dos fases: Fase 1 – Revisión Documental para verificar la 
+                suficiencia de la organización. Fase 2: Evaluación de la implementación, incluyendo la efectividad del Sistema de Gestión de 
+                la organización.`
             },
         ]
     },
     {
-		name: "Implementación interna de ISO-18788 (Seguridad Patrimonial)",
+		name: "Implementación interna de ISO-18788 (Seguridad Patrimonial) interno",
         type: "1",
         target: "OK",
         badge: "3",
@@ -328,21 +326,19 @@ const content = [
                 name: "Desarrollo de procedimientos",
                 metric: "OK / NOK",
                 objective: "OK",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus.`
+                description: ``
             },
             {
                 name: "Implementación de sistemas",
                 metric: "Auditorías",
                 objective: "OK",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet congue metus eu efficitur. 
-                Sed sed eros risus..`
+                description: ``
             },
             {
                 name: "Desarrollo de auditoría interna",
                 metric: "OK / NOK",
                 objective: "OK",
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. .`
+                description: ``
             }
         ]
     },

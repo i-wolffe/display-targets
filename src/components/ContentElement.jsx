@@ -19,8 +19,15 @@ export class  ContentElement extends Component {
       elements: this.props.elements
     }
   }
+  check_data(e,text) { // No jaló :'v 
+    if (text === '') {
+      e.preventDefault()
+      e.stopPropagation()
+      e.target.classList.add('collapsed')
+    }
+  }
   render() {
-    console.log(this.state.elements)
+    // console.log(this.state.elements)
     return (
       <Container className='elementContainer'>
         <Row className='justify-content-left itemHeader'>
@@ -48,7 +55,7 @@ export class  ContentElement extends Component {
           <Accordion>
             {
               this.state.elements.map((elem,i) => {
-                return <Accordion.Item className='acc-item' eventKey={i} key={`acc-${i}`}>
+                return <Accordion.Item className='acc-item' eventKey={i} key={`acc-${i}`} onClick={(e) => this.check_data(e,elem.description)}>
                   <Accordion.Header><strong>{elem.name}</strong></Accordion.Header>
                   <Accordion.Body>
                     <Row>
@@ -59,12 +66,17 @@ export class  ContentElement extends Component {
                         <span><strong>Objetivo: </strong>{elem.objective}</span>
                       </Col>
                     </Row>
-                    <br />
-                    <Row>
-                      <Col xs={12} lg={12}>
-                        <p className='description'>{elem.description}</p>
-                      </Col>
-                    </Row>
+                    {
+                      elem.description === ''
+                      ? null
+                      :
+                      <Row>
+                          <Col xs={12} lg={12}>
+                          <br />
+                            <p className='description'>{elem.description}</p>
+                          </Col>
+                        </Row>
+                    }
                   </Accordion.Body>
                 </Accordion.Item>
               })

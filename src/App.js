@@ -1,7 +1,7 @@
 
 import './App.css';
 import ParticlesBackground from './components/ParticlesBackground';
-import logo from './images/logo_rsz.png';
+import logo from './images/logo_white_rsz.png';
 import { FaWolfPackBattalion } from "react-icons/fa6";
 
 import Container from 'react-bootstrap/Container';
@@ -36,7 +36,9 @@ function App() {
       </Container>
       <ContentList />
       <div className='footer'>
-      <span className="iconBadge"><FaWolfPackBattalion /></span>
+      <span >Hutchinson© Celaya FMS 2023-2024</span>
+      <br/>
+      <span className="iconFooter"><FaWolfPackBattalion /></span>
       </div>
     </div>
   );
